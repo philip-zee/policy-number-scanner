@@ -42,9 +42,10 @@ module PolicyOcr
         end
     end
     
-    # this method takes in an OCR file,
-    # and parces the number using exclusive
-    # ranges
+    # these bottom two methods take in an OCR file,
+    # and parces the ocr number using exclusive
+    # ranges, and converting them into a string to
+    # then be translated to their respective values
 
     def self.conversion(file)
         (0...@lines).inject([]) do | policy_array, line |
@@ -52,9 +53,9 @@ module PolicyOcr
         end.map{ | number_string | number_string.to_i } # turning string to integer
     end
 
-    # call policy_number to inject 
-    # digits first into an string,
-    # to be called in the conversion method
+    # call policy_number to inject the fetched 
+    # digits using the digits method first and injecting 
+    # them into an string, to be called in the conversion method
 
     def self.numbers(line)
         (0...@columns).inject("") do |digit, column| 
