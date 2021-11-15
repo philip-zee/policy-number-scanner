@@ -58,5 +58,6 @@ end
 # unable to actually receive nine 0s as ruby
 # counts multiple int 0s as the value of 
 # a single int 0
+p PolicyOcr.conversion(@file)
 
-PolicyOcr.conversion(@file).map{ | policy_num | p policy_num }
+PolicyOcr.conversion(@file).map{ | policy_num | p policy_num } # see each number individually
