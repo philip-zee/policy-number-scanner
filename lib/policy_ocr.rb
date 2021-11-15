@@ -7,8 +7,8 @@ module PolicyOcr
     # chomp method (.map { | foo | foo.chomp })
 
     @file = File.readlines("./spec/fixtures/sample.txt").map(&:chomp)
-    @lines = @file.size / 4 # taking size of the file (44 lines)
-    @columns = @file.first.size / 3 # taking the size of the first line
+    @lines = @file.size / 4 # taking size of the file (44 lines) divided by 4 (1 ocr)
+    @columns = @file.first.size / 3 # taking the size of the first line (27 columns) divided by 3 (1 ocr digit)
 
     # method for mapping out digits into strings
     def self.digits 
@@ -55,7 +55,7 @@ module PolicyOcr
 
 end
 
-# unable to actually receive 9 0s as ruby
+# unable to actually receive nine 0s as ruby
 # counts multiple int 0s as the value of 
 # a single int 0
 
