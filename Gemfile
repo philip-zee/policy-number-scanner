@@ -12,3 +12,6 @@ gem 'guard-shell'
 
 # FSEvents API with Signals catching
 gem 'rb-fsevent', '~> 0.9'
+
+# Debugging tool for Ruby
+gem 'pry'

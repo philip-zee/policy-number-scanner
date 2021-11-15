@@ -15,3 +15,9 @@ References to completing this code challenge:
 7) https://stackoverflow.com/questions/36963844/difference-between-and-in-ruby
 
 8) https://stackoverflow.com/questions/32059200/convert-string-to-integer-preserving-leading-zeroes
+
+9) https://relishapp.com/rspec/rspec-core/v/2-11/docs/helper-methods/let-and-let
+
+10) https://stackoverflow.com/questions/26477464/describe-vs-context-in-rspec-differences
+
+11) https://relishapp.com/rspec/rspec-core/v/3-8/docs/example-groups/basic-structure-describe-it

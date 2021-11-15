@@ -32,6 +32,10 @@ describe PolicyOcr do
     expect(policy.conversion(file)[0]).to be_an_instance_of(Integer)
   end
 
+  # it 'reads and injects each digit into a one line string' do
+  #   expect(policy.policy_number)
+  # end
+
   context 'converts OCR to appropriate number' do
     it 'recognizes 0' do
       expect(policy.conversion(file)[0]).to eq(0)
