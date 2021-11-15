@@ -59,4 +59,4 @@ end
 # counts multiple int 0s as the value of 
 # a single int 0
 
-p PolicyOcr.conversion(@file)
+PolicyOcr.conversion(@file).map{ | policy_num | p policy_num }
